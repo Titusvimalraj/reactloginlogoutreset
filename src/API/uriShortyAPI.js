@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-
-const url = process.env.SERVER_URL || 'http://localhost:3000';
+const liveServerUrl = process.env.SERVER_URL;
+const url = liveServerUrl || 'http://localhost:3000';
 
 
 const uriShortyAPI = axios.create({
