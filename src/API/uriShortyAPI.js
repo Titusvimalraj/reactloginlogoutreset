@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const liveServerUrl = process.env.SERVER_URL;
-const url = liveServerUrl || 'http://localhost:3000';
-
+// const liveServerUrl = process.env.SERVER_URL;
+// const url = liveServerUrl || 'http://localhost:3000';
+const url = 'https://urishortly.herokuapp.com';
 
 const uriShortyAPI = axios.create({
     baseURL: url
