@@ -11,20 +11,20 @@ import { ThemeProvider, CSSReset } from '@chakra-ui/core'
 import { IconContext } from "react-icons";
 
 ReactDOM.render(
-  // <React.StrictMode>
-  <AuthProvider>
-    <UrlProvider>
-      <BrowserRouter>
-        <ThemeProvider>
-          <CSSReset />
-          <IconContext.Provider value={{ color: "blue", className: "global-class-name", style: { margin: 5, cursor: 'pointer' } }}>
-            <App />
-          </IconContext.Provider>
-        </ThemeProvider>
-      </BrowserRouter>
-    </UrlProvider>
-  </AuthProvider>
-  // </React.StrictMode>
+  <React.StrictMode>
+    <AuthProvider>
+      <UrlProvider>
+        <BrowserRouter>
+          <ThemeProvider>
+            <CSSReset />
+            <IconContext.Provider value={{ color: "blue", className: "global-class-name", style: { margin: 5, cursor: 'pointer' } }}>
+              <App />
+            </IconContext.Provider>
+          </ThemeProvider>
+        </BrowserRouter>
+      </UrlProvider>
+    </AuthProvider>
+  </React.StrictMode>
   ,
   document.getElementById('root')
 );

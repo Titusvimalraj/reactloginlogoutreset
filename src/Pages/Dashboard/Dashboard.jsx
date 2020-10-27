@@ -16,6 +16,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     updateDashboard();
+    // eslint-disable-next-line
   }, [])
 
 

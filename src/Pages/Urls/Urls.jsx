@@ -12,6 +12,7 @@ export const Urls = () => {
     // console.log(urlsList);
     useEffect(() => {
         updateUrlsList();
+        // eslint-disable-next-line
     }, [])
 
     const MotionBox = motion.custom(Box);
